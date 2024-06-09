@@ -8,10 +8,6 @@ env:  ## Setup python virtual environment
 activate:  ## Activate python virtual environment
 	@echo "run: source venv/bin/activate"
 
-.PHONY: deactivate
-deactivate: ## Deactivate python virtual environment
-	@echo "run: deactivate"
-
 .PHONY: install_deps
 install_deps:  ## Install dependencies
 	pip install -r requirements.txt
@@ -19,3 +15,7 @@ install_deps:  ## Install dependencies
 .PHONY: run
 run: ## Run the application
 	python3 main.py
+
+.PHONY: deactivate
+deactivate: ## Deactivate python virtual environment
+	@echo "run: deactivate"
