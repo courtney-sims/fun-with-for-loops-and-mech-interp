@@ -43,7 +43,7 @@ if __name__ == '__main__':
     max_activation = 0.25
 
     testModel = HookedTransformer.from_pretrained('gpt2-small')
-    layers = 1
+    layers = 12
     neurons = 3072
 
     neuron_activations = extract_neuron_activation(
