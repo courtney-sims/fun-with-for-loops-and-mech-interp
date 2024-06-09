@@ -15,3 +15,7 @@ deactivate: ## Deactivate python virtual environment
 .PHONY: install_deps
 install_deps:  ## Install dependencies
 	pip install -r requirements.txt
+
+.PHONY: run
+run: ## Run the application
+	python3 main.py
